@@ -8,7 +8,7 @@ label = pyglet.text.Label('Hello World',
                           x=window.width // 2, y=window.height // 2,
                           anchor_x='center',
                           anchor_y='center')  # this specifies the text being shown, font name, text size and position of the text
-enemy_image = pyglet.image.load('tommy.png')  # assigns an image in the folder to the variable 'image'
+enemy_image = pyglet.image.load('Images/tommy.png')  # assigns an image in the folder to the variable 'image'
 enemy = pyglet.sprite.Sprite(enemy_image, x=0, y=0) # takes enemy_image, makes it a sprite and gives it a starting location
 enemy.dx = 10.0 # the number of pixels the sprite will move per second
 
@@ -18,6 +18,7 @@ pyglet.clock.schedule_interval(update, 1/60.0) # the sprite updates at 60Hz
 
 pyglet.clock.get_fps()
 fps_display = pyglet.window.FPSDisplay(window=window)
+
 
 @window.event
 def on_key_press(symbol, mofidiers):
@@ -30,6 +31,7 @@ def on_key_press(symbol, mofidiers):
     elif symbol == key.D:
         print("The 'D' key was pressed.")
 # date: 17/09/21 - I have used Pyglet documentation to get keyboard controls working.
+
 
 @window.event
 def on_draw():
