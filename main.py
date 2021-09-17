@@ -1,7 +1,7 @@
 import pyglet  # imports the pyglet library
 from pyglet.window import key
 
-window = pyglet.window.Window()  # creates a window
+window = pyglet.window.Window(fullscreen=True)  # creates a window
 label = pyglet.text.Label('Hello World',
                           font_name="911 Porscha condensed italic",
                           font_size=30,
