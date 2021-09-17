@@ -2,8 +2,8 @@ import pyglet  # imports the pyglet library
 from pyglet.window import key
 
 window = pyglet.window.Window(fullscreen=True)  # creates a window
-label = pyglet.text.Label('Hello World',
-                          font_name="911 Porscha condensed italic",
+label = pyglet.text.Label('Python First Person Shooter',
+                          font_name="Arial",
                           font_size=30,
                           x=window.width // 2, y=window.height // 2,
                           anchor_x='center',
